@@ -233,5 +233,30 @@
 .timeline-card__header {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-8);
+}
+
+
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);
+  height: 100vh;
+  height: calc(100vh - 60px); 
+  height: calc(100vh - 60px); 
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+  margin-top: auto;
+}
+
+.contact-footer {
+  margin-top: auto;
 }

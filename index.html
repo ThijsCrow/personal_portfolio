@@ -13,15 +13,21 @@
             <nav>
                 <ul class="navigation-bar">
                     <li>
+                        <a class="btn" href="#about">
+                            <img class="btn-icon" src="media/icon/person.svg" alt="" width="16" height="16">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
                         <a class="btn btn--filled" href="#work">
                             <img class="btn-icon" src="media/icon/folder.svg" alt="" width="16" height="16">
                             <span>Work</span>
                         </a>
                     </li>
                     <li>
-                        <a class="btn" href="#about">
+                        <a class="btn" href="#background">
                             <img class="btn-icon" src="media/icon/work_history.svg" alt="" width="16" height="16">
-                            <span>About</span>
+                            <span>CV</span>
                         </a>
                     </li>
                     <li>
@@ -36,31 +42,34 @@
     </header>
 
     <main>
-        <section class="container hero-section">
-             <img class="hero-avatar" src="media/profile-picture-marker.png" alt="marker Illustration sketch of myself">
-             <div class="hero-content">
-                <h1>Hey! I'm Thijs Kraaijvanger, <br> a designer & developer based near Eindhoven</h1>
-                <p>With a strong foundation in design, I'm currently diving into front-end code to bring my own pixels to life.</p>
-             </div>
-        </section>
+        <section id="about" class="about-wrapper">
+            <div class="container hero-section">
+                <img class="hero-avatar" src="media/profile-picture-marker.png" alt="marker Illustration sketch of myself">
+                <div class="hero-content">
+                    <h1>Hey! I'm Thijs Kraaijvanger, <br> a designer & developer based near Eindhoven</h1>
+                    <p>With a strong foundation in design, I'm currently diving into front-end code to bring my own pixels to life.</p>
+                </div>
+            </div>
 
-        <section class="container skills-section">
-            <div class="skills-container">
-                <div class="skills-card skills-card--pink">
-                    <h3 class="skills-info">Branding & <br> Graphics</h3>
-                    <img class="skills-icon" src="media/skills/pen-tool-skill.svg" alt="Webicon">
-                </div>
-                <div class="skills-card skills-card--blue">
-                    <h3 class="skills-info">Webdesign <br> UI/UX</h3>
-                    <img class="skills-icon" src="media/skills/cursor-skill.svg" alt="Webicon">
-                </div>
-                <div class="skills-card skills-card--yellow">
-                    <h3 class="skills-info">Front-end <br> Development</h3>
-                    <img class="skills-icon" src="media/skills/web-skill.svg" alt="Webicon">
+            <div class="container skills-section">
+                <div class="skills-container">
+                    <div class="skills-card skills-card--pink">
+                        <h3 class="skills-info">Branding & <br> Graphics</h3>
+                        <img class="skills-icon" src="media/skills/pen-tool-skill.svg" alt="Webicon">
+                    </div>
+                    <div class="skills-card skills-card--blue">
+                        <h3 class="skills-info">Webdesign <br> UI/UX</h3>
+                        <img class="skills-icon" src="media/skills/cursor-skill.svg" alt="Webicon">
+                    </div>
+                    <div class="skills-card skills-card--yellow">
+                        <h3 class="skills-info">Front-end <br> Development</h3>
+                        <img class="skills-icon" src="media/skills/web-skill.svg" alt="Webicon">
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Work Section -->
         <section id="work" class="container work-section">
             <!-- <h2>Work</h2> -->
 
@@ -118,102 +127,93 @@
                 </div>
                 <img src="media/work/puro_petfood.png" alt="Super schattige hond, laat dat maar duidelijk wezen">
             </article>
-
         </section>
 
+        <section id="background" class="container background-section">
+            <div class="tab-wrapper">
+                <input type="radio" id="tab-experiences" name="about-tabs" checked hidden>
+                <input type="radio" id="tab-educations" name="about-tabs" hidden>
 
+                <div class="navigation-bar">
+                    <label for="tab-experiences" class="btn btn-tab">Experiences</label>
+                    <label for="tab-educations" class="btn btn-tab">Educations</label>
+                </div>
 
-<section id="about" class="container about-section">
-    <div class="tab-wrapper">
-        <input type="radio" id="tab-experiences" name="about-tabs" checked hidden>
-        <input type="radio" id="tab-educations" name="about-tabs" hidden>
+                <div class="tab-content tab-content--experiences">
+                    <div class="timeline-grid">
+                        <article class="timeline-card timeline-card--featured">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/yooker.svg" alt="Icon of Yooker">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>Strategic Webdesigner</h3>
+                                <p>Yooker · Internship & Part-time</p>
+                            </div>
+                            <p class="timeline-card__dates">Jun 2023 - Present</p>
+                        </article>
 
-        <!-- Tab Controls (styled like main navigation) -->
-        <div class="navigation-bar">
-            <label for="tab-experiences" class="btn btn-tab">Experiences</label>
-            <label for="tab-educations" class="btn btn-tab">Educations</label>
-        </div>
+                        <article class="timeline-card">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/gewest13.svg" alt="Icon of Gewest13">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>Digital / Graphic Designer</h3>
+                                <p>Gewest13 · Internship</p>
+                            </div>
+                            <p class="timeline-card__dates">Feb 2025 - Jun 2025</p>
+                        </article>
 
-        <div class="tab-content tab-content--experiences">
-            <div class="timeline-grid">
-                <article class="timeline-card timeline-card--featured">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/yooker.svg" alt="Icon of Yooker">
+                        <article class="timeline-card">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/aangenaam_marketing.svg" alt="Icon of Aangenaam Marketing">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>Graphic Designer</h3>
+                                <p>Aangenaam Marketing · Internship</p>
+                            </div>
+                            <p class="timeline-card__dates">Aug 2021 - Jan 2022</p>
+                        </article>
                     </div>
-                    <div class="timeline-card__header">
-                        <h3>Strategic Webdesigner</h3>
-                        <p>Yooker · Internship & Part-time</p>
-                    </div>
-                    <p class="timeline-card__dates">Jun 2023 - Present</p>
-                </article>
+                </div>
 
-                <article class="timeline-card">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/gewest13.svg" alt="Icon of Gewest13">
-                    </div>
-                    <div class="timeline-card__header">
-                        <h3>Digital / Graphic Designer</h3>
-                        <p>Gewest13 · Internship</p>
-                    </div>
-                    <p class="timeline-card__dates">Feb 2025 - Jun 2025</p>
-                </article>
+                <div class="tab-content tab-content--educations">
+                    <div class="timeline-grid">
+                        <article class="timeline-card timeline-card--featured">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/fontys.svg" alt="Icon of Fontys">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>ICT</h3>
+                                <p>Fontys · Associate Degree</p>
+                            </div>
+                            <p class="timeline-card__dates">Sep 2025 - Present</p>
+                        </article>
 
-                <article class="timeline-card">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/aangenaam_marketing.svg" alt="Icon of Aangenaam Marketing">
+                        <article class="timeline-card">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/sintlucas.svg" alt="Icon of SintLucas">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>Media Designer</h3>
+                                <p>SintLucas · MBO (level 4)</p>
+                            </div>
+                            <p class="timeline-card__dates">Aug 2023 - Jun 2025</p>
+                        </article>
+
+                        <article class="timeline-card">
+                            <div class="timeline-card__icon">
+                                <img src="media/experience/sintlucas.svg" alt="Icon of SintLucas">
+                            </div>
+                            <div class="timeline-card__header">
+                                <h3>Allround Mediamaker</h3>
+                                <p>SintLucas · MBO (level 3)</p>
+                            </div>
+                            <p class="timeline-card__dates">Aug 2020 - Jun 2023</p>
+                        </article>
                     </div>
-                    <div class="timeline-card__header">
-                        <h3>Graphic Designer</h3>
-                        <p>Aangenaam Marketing · Internship</p>
-                    </div>
-                    <p class="timeline-card__dates">Aug 2021 - Jan 2022</p>
-                </article>
+                </div>
             </div>
-        </div>
-
-        <div class="tab-content tab-content--educations">
-            <div class="timeline-grid">
-                <article class="timeline-card timeline-card--featured">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/fontys.svg" alt="Icon of Fontys">
-                    </div>
-                    <div class="timeline-card__header">
-                        <h3>ICT</h3>
-                        <p>Fontys · Associate Degree</p>
-                    </div>
-                    <p class="timeline-card__dates">Sep 2025 - Present</p>
-                </article>
-
-                <article class="timeline-card">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/sintlucas.svg" alt="Icon of SintLucas">
-                    </div>
-                    <div class="timeline-card__header">
-                        <h3>Media Designer</h3>
-                        <p>SintLucas · MBO (level 4)</p>
-                    </div>
-                    <p class="timeline-card__dates">Aug 2023 - Jun 2025</p>
-                </article>
-
-                <article class="timeline-card">
-                    <div class="timeline-card__icon">
-                        <img src="media/experience/sintlucas.svg" alt="Icon of SintLucas">
-                    </div>
-                    <div class="timeline-card__header">
-                        <h3>Allround Mediamaker</h3>
-                        <p>SintLucas · MBO (level 3)</p>
-                    </div>
-                    <p class="timeline-card__dates">Aug 2020 - Jun 2023</p>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
+        </section>
 
         <section style="height: 200vh;" id="contact" class="container contact-section">
             <h2>Contact</h2>

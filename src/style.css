@@ -171,9 +171,9 @@ header .container {
   overflow: hidden;
 }
 
-/* Wanneer het navigatie-item actief is */
-.navigation-bar .btn--filled .btn-icon {
-  max-width: 16px; /* Zelfde breedte als je width="16" in HTML */
+/* Vervang .navigation-bar .btn--filled .btn-icon door: */
+.btn--filled .btn-icon {
+  max-width: 16px;
   opacity: 1;
   transform: scale(1);
 }

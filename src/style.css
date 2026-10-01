@@ -131,7 +131,7 @@ header .container {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-6);
+  gap: 0px;
   border: none;
   border-radius: var(--radius-sm);
   padding: var(--space-8) var(--space-12);
@@ -155,6 +155,7 @@ header .container {
   background-color: var(--color-button);
   font-weight: var(--font-weight-cta);
   color: var(--color-text-heading);
+  gap: var(--space-6);
 }
 
 .btn--filled:hover {

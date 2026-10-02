@@ -17,6 +17,13 @@
   text-align: left;
 }
 
+.work-text-block ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding-left: var(--space-16);
+}
+
 .project-header-block {
   display: flex;
   flex-direction: column;

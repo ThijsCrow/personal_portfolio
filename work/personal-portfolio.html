@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Personal Portfolio</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/work.css">
+    <link rel="stylesheet" href="../src/home.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="work-nav">
+                <ul class="navigation-bar">
+                    <li><a class="btn btn--filled" href="../index.html">← Return</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container work-container">
+
+            <div class="project-header-block">
+                <div class="project-header-titles">
+                    <p class="category-tag">Front-end Development</p>
+                    <h1 class="project-main-title">Personal Portfolio</h1>
+                    <p>Building a custom responsive developer showcase through structured CSS architecture, Git feature branching, and high-performance micro-interactions.</p>
+                </div>
+            </div>
+
+            <div class="project-media">
+                <lottie-player 
+                    src="../media/work/personal-portfolio/personal-portfolio-3-mobile-screens.json" 
+                    background="transparent" 
+                    speed="1" 
+                    loop 
+                    autoplay>
+                </lottie-player>
+            </div>
+
+            <div class="project-meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Design & Development</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Context</span>
+                    <span class="meta-value">Personal Project</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Focus</span>
+                    <span class="meta-value">HTML, CSS, & Git</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Year</span>
+                    <span class="meta-value">2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container work-container">
+            <div class="project-media project-media-macbook">
+                <img src="../media/work/personal-portfolio/personal-portfolio-macbook.svg" alt="Portfolio Homepage on MacBook screen">
+            </div>
+            <div class="work-text-block">
+                <h2>The Front-end Challenge & Strategy</h2>
+                <p>Transitioning from a pure UI/UX design background into front-end development, the goal was to build my personal showcase portfolio from scratch without relying on heavy frameworks or pre-built templates. The goal was to prove the ability to translate complex design ideas into clean, maintainable, and pixel-perfect code.</p>
+                <p>To avoid over-reliance on AI generation tools without understanding the underlying code, I focused on mastering modern CSS features, establishing a scalable CSS architecture, and adopting a professional version control workflow with Git and GitHub Pages.</p>
+            </div>
+        </section>
+
+        <section class="container work-container">
+                <div class="grid-2col">
+                    <div class="media-card media-card--no-padding">
+                        <img src="../media/work/personal-portfolio/personal-portfolio-figma-tokens.png" alt="Ladybird Skateboard Mockup">
+                    </div>
+                    <div class="media-card media-card--no-padding">
+                        <img src="../media/work/personal-portfolio/personal-portfolio-css-variables.png" alt="Ladybird Merchandise Hoodie">
+                    </div>
+                </div>
+            <div class="work-text-block">
+                <h2>Design Tokens, Branding & CSS Architecture</h2>
+                <p>To ensure pixel-perfect fidelity between Figma and code, I established a strict variable system. Primitive tokens (raw colors, spacing scales based on a 4px grid, typography sizes) were mapped directly to semantic CSS Custom Properties inside the :root stylesheet.</p>
+                <p>For personal branding, I digitized hand-drawn physical marker sketches drawn on real post-it notes into clean vector assets (.svg). Scaling these icons precisely allowed the interactive digital sticky notes to retain an authentic, organic feel while staying crisp across all pixel ratios.</p>
+                <p>During development, as the main stylesheet grew, I refactored the styling into modular CSS files (style.css, home.css, work.css) to keep codebase maintainability high and specificity low.</p>
+            </div>
+        </section>
+
+        <section class="container work-container">
+            <div class="project-media">
+                <img src="../media/work/personal-portfolio/git-graph-pull-requests.png" alt="VS Code Git Graph showing feature branches and merged pull requests">
+            </div>
+            <div class="work-text-block">
+                <h2>Git Workflow & Controlled Development</h2>
+                <p>To prevent unmonitored code overwrites caused by AI assistance, I moved away from direct-to-main commits and adopted a structured Feature Branching & Pull Request Workflow on GitHub.</p>
+                <ul>
+                    <li>Core components (such as hero-section, navigation-section, and work-section) were built and tested on isolated branches before being reviewed.</li>
+                    <li>Code was merged into the main branch via formal GitHub Pull Requests, giving me full control over every line of HTML and CSS added.</li>
+                    <li>Configured GitHub Pages to deploy live builds straight from main, allowing instant responsive testing on mobile devices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container work-container">
+            <div class="grid-2col">
+                <div class="media-card media-card--no-padding">
+                    <img src="../media/work/personal-portfolio/personal-portfolio-navigation-bar.png" alt="Google Photos inspired floating nav bar concept">
+                </div>
+                <div class="media-card media-card--no-padding">
+                    <lottie-player 
+                        src="../media/work/personal-portfolio/personal-portfolio-lottiefiles-logo.json" 
+                        background="transparent" 
+                        speed="1" 
+                        loop 
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+            <div class="work-text-block">
+                <h2>Micro-Interactions & Performance Optimization</h2>
+                <p>To keep the minimalist aesthetic from feeling flat, I implemented subtle micro-interactions across the interface:</p>
+                <ul>
+                    <li>Inspired by the Google Photos app, I coded an interactive floating navigation bar using native CSS scroll-behavior: smooth and scroll-marginproperties to handle smooth section jumps without overlapping headers. Javascript functionalitiesa are made with help of AI</li>
+                    <li>By swapping standard MP4s and GIFs for Lottie animations in the device showcase, I reduced media file sizes by up to 90%. This improved page load speeds while preserving perfect visual quality.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container">
+            <article class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Ladybird Skatepark</h3>
+                        <p>Branding & Graphics</p>
+                    </div>
+                    <a class="btn btn--filled" href="ladybird-skatepark.html">View project</a>
+                </div>
+                <img src="../media/work/ladybird-skatepark/ladybird-sketch.svg" alt="Marker sketch of Ladybird Skatepark project logo">
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>
